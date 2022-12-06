@@ -111,10 +111,36 @@
                     <view key="view" contentMode="scaleToFill" id="cO1-Ib-FT9">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="mHI-xl-uyX">
+                                <rect key="frame" x="20" y="348" width="353" height="87.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cKA-9o-RcR">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gex-Q2-AkX">
+                                        <rect key="frame" x="0.0" y="67" width="353" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="La8-5K-ibs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mHI-xl-uyX" firstAttribute="leading" secondItem="La8-5K-ibs" secondAttribute="leading" constant="20" id="Fqi-Mv-aQr"/>
+                            <constraint firstItem="mHI-xl-uyX" firstAttribute="centerY" secondItem="cO1-Ib-FT9" secondAttribute="centerY" id="bzU-Qe-H9j"/>
+                            <constraint firstItem="La8-5K-ibs" firstAttribute="trailing" secondItem="mHI-xl-uyX" secondAttribute="trailing" constant="20" id="fM3-yz-JoP"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="QP6-53-kdz"/>
+                    <navigationItem key="navigationItem" title="Results" id="xGi-vd-I61">
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="mGC-5J-Cuk"/>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RRY-vP-Jku" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -125,7 +151,6 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="j09-Q5-jN6" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" id="l0m-eq-WWV"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="yHS-Dr-onf">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="56"/>
                         <autoresizingMask key="autoresizingMask"/>
