@@ -37,18 +37,6 @@
                                     </button>
                                 </subviews>
                             </stackView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐶" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTg-uf-s7e">
-                                <rect key="frame" x="20" y="59" width="45" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐱" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jMh-CR-nxA">
-                                <rect key="frame" x="328" y="59" width="45" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="🐰" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YU-lr-yex">
                                 <rect key="frame" x="20" y="770" width="45" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="40"/>
@@ -61,22 +49,34 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐶" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OuS-Se-vpQ">
+                                <rect key="frame" x="20" y="59" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="🐱" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Hc-h7-7AL">
+                                <rect key="frame" x="328" y="59" width="45" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="1LE-dO-SGF" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="1wN-6r-aER"/>
+                            <constraint firstItem="OuS-Se-vpQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="3vM-gk-cJ1"/>
                             <constraint firstItem="bOl-bE-KNc" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="4Su-QL-GgO"/>
+                            <constraint firstItem="9Hc-h7-7AL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Ne-7g-wn5"/>
                             <constraint firstItem="bOl-bE-KNc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Bja-M6-umb"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="bOl-bE-KNc" secondAttribute="trailing" constant="8" id="D6L-j8-fCW"/>
-                            <constraint firstItem="yTg-uf-s7e" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="IZh-LX-YQK"/>
-                            <constraint firstItem="yTg-uf-s7e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Kfs-jA-lgb"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jMh-CR-nxA" secondAttribute="trailing" constant="20" id="gpV-7T-aeA"/>
+                            <constraint firstItem="9Hc-h7-7AL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="OuS-Se-vpQ" secondAttribute="trailing" id="KWE-7V-Toj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Hc-h7-7AL" secondAttribute="trailing" constant="20" id="Wr5-f9-jui"/>
                             <constraint firstItem="8YU-lr-yex" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="jJr-qB-fnr"/>
-                            <constraint firstItem="jMh-CR-nxA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="jWD-xT-Kqt"/>
                             <constraint firstItem="8YU-lr-yex" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="mLb-89-ZvN"/>
                             <constraint firstItem="1LE-dO-SGF" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="8YU-lr-yex" secondAttribute="trailing" id="oP5-Zd-fGK"/>
-                            <constraint firstItem="jMh-CR-nxA" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="yTg-uf-s7e" secondAttribute="trailing" id="pgl-vb-H9U"/>
+                            <constraint firstItem="OuS-Se-vpQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="pj5-oW-xvT"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="1LE-dO-SGF" secondAttribute="trailing" constant="20" id="yOf-Kk-nrK"/>
                         </constraints>
                     </view>
@@ -100,21 +100,34 @@
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="v09-Ww-3A1" eventType="touchUpInside" id="HgN-gZ-3im"/>
+                                            <action selector="singleAnswerButtonPressed:" destination="R6h-TR-JGF" eventType="touchUpInside" id="zqF-X1-Fer"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cEb-7J-09b">
                                         <rect key="frame" x="0.0" y="54.333333333333314" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="v09-Ww-3A1" eventType="touchUpInside" id="7sU-ku-fQa"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zxh-v7-YNX">
                                         <rect key="frame" x="0.0" y="108.66666666666669" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="v09-Ww-3A1" eventType="touchUpInside" id="eWG-uR-LPv"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sqw-1P-ezY">
                                         <rect key="frame" x="0.0" y="163" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                        <connections>
+                                            <action selector="singleAnswerButtonPressed:" destination="v09-Ww-3A1" eventType="touchUpInside" id="0jA-pf-htG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -135,6 +148,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-9G-2lK">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="multipleAnswerButtonPressed" destination="v09-Ww-3A1" eventType="valueChanged" id="x6j-4L-dgL"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -149,6 +165,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="XJU-8v-GYR">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="multipleAnswerButtonPressed" destination="v09-Ww-3A1" eventType="valueChanged" id="Xzr-fU-4xg"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -163,6 +182,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Dbf-Za-1ci">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="multipleAnswerButtonPressed" destination="v09-Ww-3A1" eventType="valueChanged" id="BuV-OX-L1R"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -177,6 +199,9 @@
                                                     </label>
                                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pX1-dZ-e0O">
                                                         <rect key="frame" x="304" y="0.0" width="51" height="31"/>
+                                                        <connections>
+                                                            <action selector="multipleAnswerButtonPressed" destination="v09-Ww-3A1" eventType="valueChanged" id="fSe-zv-otK"/>
+                                                        </connections>
                                                     </switch>
                                                 </subviews>
                                             </stackView>
@@ -186,6 +211,9 @@
                                         <rect key="frame" x="0.0" y="204" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Enviar respuesta"/>
+                                        <connections>
+                                            <action selector="multipleAnswerButtonPressed" destination="v09-Ww-3A1" eventType="touchUpInside" id="IHx-8W-YNO"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -221,6 +249,9 @@
                                         <rect key="frame" x="0.0" y="90.333333333333371" width="353" height="34.333333333333343"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" title="Enviar respuesta"/>
+                                        <connections>
+                                            <action selector="rangedAnswerButtonPressed" destination="v09-Ww-3A1" eventType="touchUpInside" id="hQK-nB-fEl"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -260,11 +291,16 @@
                         <outlet property="multiLabel2" destination="7mO-MK-cba" id="tTT-aF-wKn"/>
                         <outlet property="multiLabel3" destination="0A8-Po-TZF" id="b3M-XK-AKo"/>
                         <outlet property="multiLabel4" destination="BCD-6E-3gI" id="jTt-q1-IC5"/>
+                        <outlet property="multiSwitch1" destination="Dgc-9G-2lK" id="enm-Tn-QIG"/>
+                        <outlet property="multiSwitch2" destination="XJU-8v-GYR" id="Vvt-cO-UvQ"/>
+                        <outlet property="multiSwitch3" destination="Dbf-Za-1ci" id="uhO-9b-P16"/>
+                        <outlet property="multiSwitch4" destination="pX1-dZ-e0O" id="FeP-Lr-Vmb"/>
                         <outlet property="multipleStackView" destination="A9C-Uf-oxk" id="ZMF-OM-ZpW"/>
                         <outlet property="questionLabel" destination="mmA-U3-IW2" id="Y3w-PA-SJc"/>
                         <outlet property="questionProgressView" destination="eaI-Fh-beW" id="T5j-Ri-fgi"/>
                         <outlet property="rangedLabel1" destination="LVJ-rI-me0" id="f32-0V-Ght"/>
                         <outlet property="rangedLabel2" destination="MfC-TJ-XcY" id="8hT-I8-brV"/>
+                        <outlet property="rangedSlider" destination="EkB-uc-hiW" id="vYL-ke-cp8"/>
                         <outlet property="rangedStackView" destination="fBh-fU-BSb" id="nTN-hu-SmV"/>
                         <outlet property="singleButton1" destination="dXm-uP-uXw" id="vqF-Do-iub"/>
                         <outlet property="singleButton2" destination="cEb-7J-09b" id="UVN-3z-jtY"/>
@@ -275,6 +311,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Msd-6w-Djh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="R6h-TR-JGF" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="1878.6259541984732" y="4.9295774647887329"/>
         </scene>
