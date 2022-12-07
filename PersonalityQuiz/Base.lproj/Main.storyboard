@@ -189,22 +189,55 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="fBh-fU-BSb">
+                                <rect key="frame" x="20" y="329.33333333333331" width="353" height="124.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="TTq-gw-Co4">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="70.333333333333329"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EkB-uc-hiW">
+                                                <rect key="frame" x="-2" y="0.0" width="357" height="31"/>
+                                            </slider>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="JhX-0D-nCp">
+                                                <rect key="frame" x="0.0" y="50" width="353" height="20.333333333333329"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LVJ-rI-me0">
+                                                        <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MfC-TJ-XcY">
+                                                        <rect key="frame" x="311.66666666666669" y="0.0" width="41.333333333333314" height="20.333333333333332"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isM-TD-imK">
+                                        <rect key="frame" x="0.0" y="90.333333333333371" width="353" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Enviar respuesta"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aey-RB-PFF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="fBh-fU-BSb" secondAttribute="trailing" constant="20" id="3G2-9u-Gol"/>
                             <constraint firstItem="WXI-f4-bEl" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="Lhs-Mf-0hR"/>
                             <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="WXI-f4-bEl" secondAttribute="trailing" constant="20" id="Vfd-jO-v47"/>
+                            <constraint firstItem="fBh-fU-BSb" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="dE8-Cx-ti1"/>
                             <constraint firstItem="WXI-f4-bEl" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="doJ-5W-Yic"/>
                             <constraint firstItem="A9C-Uf-oxk" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="g9g-HU-Cdo"/>
                             <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="A9C-Uf-oxk" secondAttribute="trailing" constant="20" id="hEU-eM-bay"/>
+                            <constraint firstItem="fBh-fU-BSb" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="i83-Wm-7NZ"/>
                             <constraint firstItem="A9C-Uf-oxk" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="pdK-EG-jBz"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="WXI-f4-bEl"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="skZ-wv-e7h"/>
                     <connections>
