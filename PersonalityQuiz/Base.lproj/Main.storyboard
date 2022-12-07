@@ -88,7 +88,7 @@
         <!--Question View Controller-->
         <scene sceneID="Xbl-Db-bhX">
             <objects>
-                <viewController id="v09-Ww-3A1" customClass="QuestionViewController" customModule="PersonalityQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="v09-Ww-3A1" customClass="QuestionViewController" customModule="PersonalityQuiz" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EBl-xH-gZd">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="783"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -256,6 +256,9 @@
                     </view>
                     <navigationItem key="navigationItem" id="skZ-wv-e7h"/>
                     <connections>
+                        <outlet property="multipleStackView" destination="A9C-Uf-oxk" id="ZMF-OM-ZpW"/>
+                        <outlet property="rangedStackView" destination="fBh-fU-BSb" id="nTN-hu-SmV"/>
+                        <outlet property="singleStackView" destination="WXI-f4-bEl" id="OuW-g4-LGC"/>
                         <segue destination="qkL-5N-rOe" kind="show" id="rkX-QT-vdJ"/>
                     </connections>
                 </viewController>
