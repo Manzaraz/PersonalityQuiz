@@ -224,19 +224,34 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mmA-U3-IW2">
+                                <rect key="frame" x="20" y="76" width="353" height="38.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eaI-Fh-beW">
+                                <rect key="frame" x="20" y="759" width="353" height="4"/>
+                            </progressView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Aey-RB-PFF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="mmA-U3-IW2" secondAttribute="trailing" constant="20" id="0c7-zE-gEl"/>
                             <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="fBh-fU-BSb" secondAttribute="trailing" constant="20" id="3G2-9u-Gol"/>
+                            <constraint firstItem="Aey-RB-PFF" firstAttribute="bottom" secondItem="eaI-Fh-beW" secondAttribute="bottom" constant="20" id="ESW-80-rZl"/>
                             <constraint firstItem="WXI-f4-bEl" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="Lhs-Mf-0hR"/>
                             <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="WXI-f4-bEl" secondAttribute="trailing" constant="20" id="Vfd-jO-v47"/>
+                            <constraint firstItem="mmA-U3-IW2" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="ZmG-sS-tZK"/>
                             <constraint firstItem="fBh-fU-BSb" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="dE8-Cx-ti1"/>
                             <constraint firstItem="WXI-f4-bEl" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="doJ-5W-Yic"/>
+                            <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="eaI-Fh-beW" secondAttribute="trailing" constant="20" id="dyC-wH-pPf"/>
+                            <constraint firstItem="eaI-Fh-beW" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="eaJ-DS-N2M"/>
                             <constraint firstItem="A9C-Uf-oxk" firstAttribute="centerY" secondItem="EBl-xH-gZd" secondAttribute="centerY" id="g9g-HU-Cdo"/>
                             <constraint firstItem="Aey-RB-PFF" firstAttribute="trailing" secondItem="A9C-Uf-oxk" secondAttribute="trailing" constant="20" id="hEU-eM-bay"/>
                             <constraint firstItem="fBh-fU-BSb" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="i83-Wm-7NZ"/>
                             <constraint firstItem="A9C-Uf-oxk" firstAttribute="leading" secondItem="Aey-RB-PFF" secondAttribute="leading" constant="20" id="pdK-EG-jBz"/>
+                            <constraint firstItem="mmA-U3-IW2" firstAttribute="top" secondItem="Aey-RB-PFF" secondAttribute="top" constant="20" id="xC2-dD-Q5w"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="skZ-wv-e7h"/>
